@@ -6,7 +6,7 @@ Demo [ https://blademan.github.io/react_shop/]
 
 ### Front-end
 
-ReactJS - Frontend framework
-useContext
-useReducer
-Materialize - [https://materializecss.com/-UI ]
+- ReactJS - Frontend framework
+- useContext
+- useReducer
+- Materialize - [https://materializecss.com/-UI ]
