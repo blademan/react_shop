@@ -1,7 +1,10 @@
 import React from 'react';
 import Card from './Card';
-export default function CardList(props) {
-  const { goods = [], addBasket } = props;
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
+export default function CardList() {
+  const { goods = [] } = useContext(ShopContext);
 
   if (!goods.length) {
     return <h3>Nothing here</h3>;
@@ -10,7 +13,7 @@ export default function CardList(props) {
   return (
     <div className="goods">
       {goods.map((item) => (
-        <Card addBasket={addBasket} key={item.id} {...item} />
+        <Card key={item.id} {...item} />
       ))}
     </div>
   );
